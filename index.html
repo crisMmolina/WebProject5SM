@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Autor: Cristopher Molina - Quetzal Code, desarrollo de software freelance -->
+    <meta charset="utf-8" />
+    <title>Quetzal Code | Desarrollo de Software</title>
+
+    <!-- Fuente descargada desde Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono&display=swap" />
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body>
+
+    <!-- ===================== HEADER - cabecera fija ===================== -->
+    <header>
+        <div class="interior">
+        <a href="#inicio" class="logo"><img src="imagenes/logo.png" alt="Logo de Quetzal Code" /> Quetzal Code</a>
+
+        <!-- NAV - enlaces de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#logros">Logros</a></li>
+                <li><a href="#proceso">Proceso</a></li>
+                <li><a href="#contacto" class="boton">Contáctame</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- ===================== PORTADA con video de fondo ===================== -->
+    <section id="inicio" class="portada">
+        <video autoplay muted loop poster="imagenes/video-portada.jpg">
+            <source src="video/codigo.mp4" type="video/mp4" />
+        </video>
+        <div class="capa"></div>
+
+        <div class="portada-contenido">
+            <div class="portada-texto">
+                <p class="portada-ubicacion">Quetzal Code · Desarrollo de software · Ciudad de México</p>
+                <h1>Desarrollo de software a la medida</h1>
+                <p class="portada-sub">Por <strong>Cristopher Molina</strong>, desarrollador freelance.</p>
+                <p>
+                    Sitios web, APIs y plataformas con visualización de datos,
+                    desarrollados con Java, React y Node.js.
+                </p>
+            </div>
+
+            <!-- Tarjeta de código decorativa -->
+<pre class="tarjeta-codigo"><span class="archivo">Freelancer.java</span>
+<span class="c-clave">public class</span> <strong>Freelancer</strong> {
+
+  <strong>String</strong> nombre  = <span class="c-texto">"Cristopher Molina"</span>;
+  <strong>String</strong> escuela = <span class="c-texto">"UPIICSA - IPN"</span>;
+  <strong>String</strong>[] stack = { <span class="c-texto">"Java"</span>, <span class="c-texto">"React"</span>, <span class="c-texto">"Node.js"</span> };
+  <span class="c-clave">boolean</span> disponible = <span class="c-clave">true</span>;
+
+  <strong>Proyecto</strong> crear(<strong>Idea</strong> tuIdea) {
+    <span class="c-clave">return new</span> <strong>Proyecto</strong>(tuIdea);
+  }
+}</pre>
+        </div>
+    </section>
+
+    <!-- ===================== CONTENIDO: SECTION + ASIDE ===================== -->
+    <div class="contenedor">
+
+        <!-- SECTION - contenido principal -->
+        <section class="contenido">
+
+            <!-- ARTICLE: Sobre mí -->
+            <article id="sobre-mi">
+                <p class="subtitulo">Sobre mí</p>
+                <h2>Cristopher Molina</h2>
+                <figure class="sobre-mi-imagen">
+                    <img src="imagenes/hero-codigo.jpg" alt="Espacio de trabajo con laptop y código" />
+                </figure>
+                <p class="justificado">
+                    Soy estudiante de <strong>Ingeniería en Informática</strong> en UPIICSA del IPN y
+                    Técnico en Programación por el CECyT 9. Tengo una base sólida en
+                    <strong>Java</strong>, bases de datos relacionales y desarrollo de APIs.
+                </p>
+                <p class="justificado">
+                    He desarrollado aplicaciones web con mapas y análisis de datos, trabajando
+                    en equipo con metodologías ágiles. Actualmente me especializo en
+                    <strong>Spring Boot</strong> para desarrollo backend.
+                </p>
+                <ul class="lista-check">
+                    <li><i class="fa-solid fa-check"></i> Interfaces web con React</li>
+                    <li><i class="fa-solid fa-check"></i> Backend y APIs con Java, Spring Boot y Node.js</li>
+                    <li><i class="fa-solid fa-check"></i> Mapas y visualización de datos con MapBox</li>
+                </ul>
+            </article>
+
+            <!-- ARTICLE: Servicios -->
+            <article id="servicios">
+                <p class="subtitulo">Servicios</p>
+                <h2>Lo que hago</h2>
+
+                <div class="tarjeta">
+                    <i class="fa-solid fa-laptop-code icono"></i>
+                    <h3>Sitios y aplicaciones web</h3>
+                    <p>Páginas y aplicaciones con HTML5, CSS3, JavaScript y React.</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="fa-solid fa-server icono"></i>
+                    <h3>Backend y APIs</h3>
+                    <p>Desarrollo de APIs REST con Java, Spring Boot y Node.js.</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="fa-solid fa-database icono"></i>
+                    <h3>Bases de datos</h3>
+                    <p>Diseño de bases de datos relacionales en MySQL y Oracle.</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="fa-solid fa-map-location-dot icono"></i>
+                    <h3>Mapas y datos</h3>
+                    <p>Mapas interactivos con MapBox y paneles con gráficas.</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="fa-brands fa-android icono"></i>
+                    <h3>Aplicaciones Android</h3>
+                    <p>Desarrollo de aplicaciones móviles para Android.</p>
+                </div>
+                <div class="tarjeta">
+                    <i class="fa-solid fa-screwdriver-wrench icono"></i>
+                    <h3>Mantenimiento</h3>
+                    <p>Corrección de errores y nuevas funciones en sistemas existentes.</p>
+                </div>
+            </article>
+
+            <!-- ARTICLE: Proyectos -->
+            <article id="proyectos">
+                <p class="subtitulo">Portafolio</p>
+                <h2>Proyectos</h2>
+
+                <div class="proyecto">
+                    <a href="https://mercur-ia.vercel.app/map" target="_blank">
+                        <img src="imagenes/proyecto-mercuria.png" alt="Captura de la plataforma MercurIA" />
+                    </a>
+                    <h3>MercurIA</h3>
+                    <p>Plataforma para planear eventos en la CDMX con mapas, datos económicos y
+                       simulaciones. Dirigí el desarrollo del frontend y los mapas.</p>
+                    <p class="tecnologias">React · Vite · MapBox · Node.js · Vercel</p>
+                    <a href="https://mercur-ia.vercel.app/map" target="_blank" class="enlace">Ver demo</a>
+                    <a href="https://github.com/zoe718/MercurIA" target="_blank" class="enlace">Código</a>
+                </div>
+
+                <div class="proyecto">
+                    <a href="https://lumiv-ia-f.vercel.app/" target="_blank">
+                        <img src="imagenes/proyecto-lumivia.png" alt="Captura de la plataforma LumivIA" />
+                    </a>
+                    <h3>LumivIA</h3>
+                    <p>Monitoreo de movilidad, medio ambiente y riesgos de la ciudad en tiempo real.
+                       Desarrollé el frontend durante un hackathon de 48 horas.</p>
+                    <p class="tecnologias">React · TypeScript · MapBox · IBM Cloud</p>
+                    <a href="https://lumiv-ia-f.vercel.app/" target="_blank" class="enlace">Ver demo</a>
+                    <a href="https://github.com/crisMmolina/LumivIA-F" target="_blank" class="enlace">Código</a>
+                </div>
+
+                <div class="proyecto">
+                    <img src="imagenes/proyecto-railsense.jpg" alt="Andén de una estación de metro" />
+                    <h3>RailSense</h3>
+                    <p>Herramienta de código abierto que procesa reportes ciudadanos y genera mapas de
+                       calor de redes de metro.</p>
+                    <p class="tecnologias">React · Node.js</p>
+                </div>
+            </article>
+
+            <!-- ARTICLE: Logros -->
+            <article id="logros">
+                <p class="subtitulo">Logros</p>
+                <h2>Hackathons</h2>
+
+                <div class="logro">
+                    <p class="subtitulo"><i class="fa-solid fa-trophy"></i> 1er lugar · IBM Track</p>
+                    <h3>SEDECO Secretaría Hackathon</h3>
+                    <p>Junio 2026 · Proyecto MercurIA</p>
+                </div>
+                <div class="logro">
+                    <p class="subtitulo"><i class="fa-solid fa-trophy"></i> 1er lugar · IBM Track</p>
+                    <h3>IBM Talent Land Genius Arena</h3>
+                    <p>Abril 2026 · Proyecto LumivIA</p>
+                </div>
+                <div class="logro">
+                    <p class="subtitulo"><i class="fa-solid fa-medal"></i> 3er lugar · Best Bolt Award</p>
+                    <h3>ElevenLabs Hackathon CDMX</h3>
+                    <p>Diciembre 2025 · Proyecto Psyness</p>
+                </div>
+                <div class="logro">
+                    <p class="subtitulo"><i class="fa-solid fa-award"></i> Ganador · Open Source</p>
+                    <h3>Your Future Made in Austria</h3>
+                    <p>Noviembre 2025 · Proyecto RailSense</p>
+                </div>
+            </article>
+
+            <!-- ARTICLE: Proceso de trabajo -->
+            <article id="proceso">
+                <p class="subtitulo">Proceso</p>
+                <h2>Forma de trabajo</h2>
+                <ol>
+                    <li class="paso">
+                        <span class="numero">1</span>
+                        <h3>Reunión</h3>
+                        <p>Revisamos el proyecto, los objetivos y el presupuesto.</p>
+                    </li>
+                    <li class="paso">
+                        <span class="numero">2</span>
+                        <h3>Propuesta</h3>
+                        <p>Cotización con tiempos y entregables.</p>
+                    </li>
+                    <li class="paso">
+                        <span class="numero">3</span>
+                        <h3>Desarrollo</h3>
+                        <p>Avances semanales para revisión.</p>
+                    </li>
+                    <li class="paso">
+                        <span class="numero">4</span>
+                        <h3>Entrega</h3>
+                        <p>Publicación del proyecto y soporte.</p>
+                    </li>
+                </ol>
+            </article>
+
+            <!-- ARTICLE: Contacto -->
+            <article id="contacto" class="contacto">
+                <div class="contacto-info">
+                    <p class="subtitulo">Contacto</p>
+                    <h2>Escríbeme</h2>
+                    <p>Envía los detalles de tu proyecto y te responderé con una cotización.</p>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> <a href="mailto:molina.fernandez.cristopherian@gmail.com">molina.fernandez.cristopherian@gmail.com</a></li>
+                        <li><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/cristopher-molina-f" target="_blank">cristopher-molina-f</a></li>
+                        <li><i class="fa-brands fa-github"></i> <a href="https://github.com/crisMmolina" target="_blank">crisMmolina</a></li>
+                    </ul>
+                </div>
+
+                <!-- El formulario abre el correo del visitante (sin JavaScript) -->
+                <form action="mailto:molina.fernandez.cristopherian@gmail.com" method="post" enctype="text/plain">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required />
+
+                    <label for="servicio">Servicio de interés</label>
+                    <select id="servicio" name="servicio">
+                        <option>Sitio o aplicación web</option>
+                        <option>Backend y APIs</option>
+                        <option>Bases de datos</option>
+                        <option>Mapas y datos</option>
+                        <option>Aplicación Android</option>
+                        <option>Mantenimiento</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+
+                    <button type="submit" class="boton">Enviar mensaje</button>
+                </form>
+            </article>
+        </section>
+
+        <!-- ASIDE - información adicional -->
+        <aside>
+            <div class="caja caja-azul">
+                <i class="fa-regular fa-calendar-check"></i>
+                <h4>Consulta inicial sin costo</h4>
+                <p>Una llamada de 30 minutos para revisar tu proyecto.</p>
+                <a href="#contacto" class="boton boton-blanco">Solicitar consulta</a>
+            </div>
+
+            <div class="caja">
+                <h4>Información</h4>
+                <p><strong><i class="fa-solid fa-location-dot"></i> Ubicación</strong><br />Ciudad de México</p>
+                <p><strong><i class="fa-solid fa-laptop"></i> Modalidad</strong><br />Remota o presencial</p>
+                <p><strong><i class="fa-regular fa-clock"></i> Horario</strong><br />Lunes a viernes, 9:00 a 18:00</p>
+            </div>
+
+            <div class="caja">
+                <h4>Contacto</h4>
+                <a href="mailto:molina.fernandez.cristopherian@gmail.com" class="enlace-rapido"><i class="fa-solid fa-envelope"></i> Enviar correo</a>
+                <a href="https://www.linkedin.com/in/cristopher-molina-f" target="_blank" class="enlace-rapido"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://github.com/crisMmolina" target="_blank" class="enlace-rapido"><i class="fa-brands fa-github"></i> GitHub</a>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ===================== FOOTER - pie de página ===================== -->
+    <footer>
+        <div class="interior">
+        <div class="pie-columna pie-marca">
+            <p class="logo"><img src="imagenes/logo.png" alt="Logo de Quetzal Code" /> Quetzal Code</p>
+            <p>Desarrollo de software a la medida por Cristopher Molina.</p>
+        </div>
+        <div class="pie-columna">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="pie-columna">
+            <h4>Contacto</h4>
+            <ul>
+                <li><a href="mailto:molina.fernandez.cristopherian@gmail.com">Correo electrónico</a></li>
+                <li><a href="https://www.linkedin.com/in/cristopher-molina-f" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/crisMmolina" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Botón para regresar arriba (posicionamiento fijo) -->
+    <a href="#inicio" class="boton-arriba" title="Regresar arriba"><i class="fa-solid fa-arrow-up"></i></a>
+
+</body>
+</html>

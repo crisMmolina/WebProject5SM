@@ -1,0 +1,684 @@
+/* =========================================================
+   estilo.css - Página de Cristopher Molina
+   Colores: azul marino #0b1f44, azul #1d4ed8, gris #5b6578
+   ========================================================= */
+
+/* Al usar el menú, deja espacio para el header fijo */
+html {
+    scroll-padding-top: 80px;
+}
+
+/* Selector universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", Arial, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1f2937;
+    background-color: #f5f7fb;
+    padding-top: 70px; /* espacio para el header fijo */
+}
+
+h1, h2, h3, h4 {
+    color: #0b1f44;
+    line-height: 1.2;
+}
+
+a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+/* Contenedor centrado que se usa en header y footer */
+.interior {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* ---------- Botones ---------- */
+.boton {
+    display: inline-block;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1d4ed8;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: #1e40af;
+}
+
+.boton-blanco {
+    background-color: white;
+    color: #0b1f44;
+}
+
+.boton-blanco:hover {
+    background-color: #eef3fc;
+}
+
+/* =========================================================
+   HEADER - posicionamiento fijo
+   ========================================================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 1px solid #dde4f0;
+}
+
+.logo {
+    float: left;
+    margin-top: 11px;
+    font-size: 19px;
+    font-weight: 800;
+    color: #0b1f44;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* NAV */
+nav {
+    float: right;
+    margin-top: 14px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #5b6578;
+    font-weight: 600;
+}
+
+/* Apariencia dinámica: hover */
+nav a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+nav a.boton {
+    color: white;
+    margin-left: 10px;
+}
+
+nav a.boton:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================================================
+   PORTADA con video de fondo
+   ========================================================= */
+.portada {
+    position: relative;
+    height: 540px;
+    overflow: hidden;
+    background-color: #0b1f44;
+}
+
+/* El video y la capa se colocan con posicionamiento absoluto */
+.portada video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 31, 68, 0.86); /* RGBA: azul transparente */
+}
+
+.portada-contenido {
+    position: relative;
+    z-index: 2;
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 100px;
+    color: #c7d4ee;
+}
+
+.portada-texto {
+    float: left;
+    width: 600px;
+}
+
+.portada-ubicacion {
+    font-weight: 600;
+}
+
+.portada h1 {
+    font-size: 48px;
+    color: white;
+    margin: 16px 0 20px;
+}
+
+.portada-sub {
+    font-size: 21px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Tarjeta de código */
+.tarjeta-codigo {
+    float: right;
+    width: 450px;
+    padding: 20px 24px;
+    border: 1px solid #24365e;
+    border-radius: 6px;
+    background-color: #0f1a30;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: #cfd8e8;
+}
+
+.archivo {
+    display: block;
+    text-align: right;
+    color: #8a9bbd;
+    border-bottom: 1px solid #24365e;
+    margin-bottom: 10px;
+}
+
+.c-clave { color: #8fa8d8; }
+.c-texto { color: #a9c1a0; }
+
+/* =========================================================
+   CONTENEDOR: section (izquierda) + aside (derecha)
+   ========================================================= */
+.contenedor {
+    width: 1140px;
+    margin: 40px auto;
+    overflow: hidden; /* contiene los elementos flotantes */
+}
+
+.contenido {
+    float: left;
+    width: 800px;
+}
+
+aside {
+    float: right;
+    width: 310px;
+}
+
+/* ---------- ARTICLE ---------- */
+article {
+    background-color: white;
+    border: 1px solid #dde4f0;
+    border-radius: 6px;
+    padding: 40px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+article h2 {
+    font-size: 30px;
+    margin: 6px 0 14px;
+}
+
+article p {
+    color: #5b6578;
+}
+
+/* Subtítulo: solo cambia el color de la letra */
+.subtitulo {
+    font-weight: 600;
+    color: #1d4ed8 !important;
+}
+
+.intro {
+    margin-bottom: 24px;
+}
+
+.justificado {
+    text-align: justify;
+    margin-bottom: 14px;
+}
+
+/* ---------- Sobre mí: imagen flotante ---------- */
+.sobre-mi-imagen {
+    float: left;
+    position: relative;
+    width: 280px;
+    margin: 0 30px 10px 0;
+}
+
+.sobre-mi-imagen img {
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.lista-check li {
+    padding: 4px 0;
+    font-weight: 600;
+}
+
+.lista-check i {
+    color: #1d4ed8;
+    margin-right: 8px;
+}
+
+/* ---------- Servicios: tarjetas en línea ---------- */
+.tarjeta {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    min-height: 200px;
+    margin: 0 6px 12px 0;
+    padding: 22px;
+    border: 1px solid #dde4f0;
+    border-radius: 6px;
+}
+
+.tarjeta:hover {
+    border-color: #1d4ed8;
+}
+
+.icono {
+    display: block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    background-color: #eef3fc;
+    color: #1d4ed8;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tarjeta h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.tarjeta p {
+    font-size: 14px;
+}
+
+/* ---------- Proyectos ---------- */
+.proyecto {
+    margin-bottom: 20px;
+    padding-right: 24px;
+    border: 1px solid #dde4f0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.proyecto:hover {
+    border-color: #1d4ed8;
+}
+
+.proyecto img {
+    float: left;
+    width: 300px;
+    height: 270px;
+    margin-right: 24px;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.proyecto h3 {
+    font-size: 21px;
+    margin: 24px 0 8px;
+}
+
+.proyecto p {
+    font-size: 14px;
+}
+
+.tecnologias {
+    margin: 10px 0;
+    font-family: "JetBrains Mono", monospace;
+    color: #0b1f44 !important;
+}
+
+.enlace {
+    margin-right: 18px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Logros ---------- */
+.logro {
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+    margin: 0 6px 12px 0;
+    padding: 18px 20px;
+    border: 1px solid #dde4f0;
+    border-left: 4px solid #1d4ed8;
+    border-radius: 6px;
+}
+
+.logro i {
+    margin-right: 4px;
+}
+
+.logro h3 {
+    font-size: 17px;
+    margin: 4px 0;
+}
+
+.logro p {
+    font-size: 14px;
+}
+
+/* ---------- Proceso ---------- */
+.paso {
+    display: inline-block;
+    vertical-align: top;
+    width: 165px;
+    margin-right: 8px;
+}
+
+.numero {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin-bottom: 12px;
+    border-radius: 50%;
+    background-color: #1d4ed8;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+}
+
+.paso h3 {
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.paso p {
+    font-size: 14px;
+}
+
+/* ---------- Contacto ---------- */
+.contacto {
+    background-color: #0b1f44;
+    border: none;
+}
+
+.contacto h2 {
+    color: white;
+}
+
+.contacto-info {
+    float: left;
+    width: 340px;
+}
+
+.contacto-info p {
+    color: #c7d4ee;
+    margin-bottom: 20px;
+}
+
+.contacto-info .subtitulo {
+    color: #c7d4ee !important;
+    margin-bottom: 0;
+}
+
+.contacto-info li {
+    padding: 6px 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.contacto-info li a {
+    color: white;
+}
+
+.contacto-info li a:hover {
+    text-decoration: underline;
+}
+
+.contacto-info i {
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background-color: #13306b;
+    color: white;
+    text-align: center;
+}
+
+form {
+    float: right;
+    width: 330px;
+    padding: 24px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0b1f44;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    border: 1px solid #dde4f0;
+    border-radius: 4px;
+    background-color: #f5f7fb;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+/* Apariencia dinámica: focus */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #1d4ed8;
+    background-color: white;
+}
+
+form .boton {
+    width: 100%;
+}
+
+/* =========================================================
+   ASIDE
+   ========================================================= */
+.caja {
+    margin-bottom: 22px;
+    padding: 24px;
+    border: 1px solid #dde4f0;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.caja h4 {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.caja p {
+    font-size: 13px;
+    color: #5b6578;
+    margin-bottom: 12px;
+}
+
+.caja strong {
+    font-size: 14px;
+    color: #0b1f44;
+}
+
+.caja strong i {
+    color: #1d4ed8;
+    margin-right: 6px;
+}
+
+.caja-azul {
+    border: none;
+    background-color: #1d4ed8;
+    color: white;
+}
+
+.caja-azul i {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.caja-azul h4 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.caja-azul p {
+    color: #dbe5fb;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.caja-azul .boton {
+    display: block;
+    text-align: center;
+}
+
+.enlace-rapido {
+    display: block;
+    margin-bottom: 6px;
+    padding: 10px 12px;
+    border-radius: 4px;
+    background-color: #f5f7fb;
+    color: #0b1f44;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.enlace-rapido:hover {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+.enlace-rapido i {
+    width: 22px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer {
+    clear: both;
+    padding: 50px 0 20px;
+    background-color: #0b1f44;
+    color: #9fb0cf;
+    font-size: 14px;
+}
+
+.pie-columna {
+    display: inline-block;
+    vertical-align: top;
+    width: 260px;
+}
+
+.pie-marca {
+    width: 520px;
+    padding-right: 120px;
+}
+
+footer .logo {
+    float: none;
+    margin: 0 0 14px;
+    color: white;
+}
+
+/* En el fondo oscuro el logo va dentro de un círculo blanco */
+footer .logo img {
+    background-color: white;
+    border-radius: 4px;
+}
+
+footer h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+footer li {
+    padding: 4px 0;
+}
+
+footer a {
+    color: #9fb0cf;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.pie-legal {
+    margin-top: 36px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+}
+
+/* Botón regresar arriba: posicionamiento fijo */
+.boton-arriba {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 20;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 4px;
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+}
+
+.boton-arriba:hover {
+    background-color: #1e40af;
+}
