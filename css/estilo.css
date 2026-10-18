@@ -247,24 +247,23 @@ mark {
     color: #222222;
 }
 
-/* ---------- Servicios ---------- */
-.tarjeta {
-    display: inline-block;
-    vertical-align: top;
-    width: 236px;
-    height: 160px;
-    margin: 0 4px 10px 0;
-    padding: 16px;
-    border: 1px solid #dddddd;
+/* ---------- Servicios: imagen flotante y lista ---------- */
+.imagen-derecha {
+    float: right;
+    width: 280px;
+    margin: 0 0 10px 24px;
 }
 
-.tarjeta h3 {
-    font-size: 17px;
-    margin-bottom: 8px;
+.lista-servicios {
+    list-style: square;
+    padding-left: 20px;
+    color: #0f62fe;
 }
 
-.tarjeta p {
-    font-size: 14px;
+.lista-servicios li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #bbbbbb;
+    color: #222222;
 }
 
 /* ---------- Proyectos: imagen flotante ---------- */
@@ -325,23 +324,15 @@ td {
     border-bottom: 1px solid #dddddd;
 }
 
-/* ---------- Proceso ---------- */
-.paso {
-    display: inline-block;
-    vertical-align: top;
-    width: 170px;
-    margin-right: 8px;
-    padding-top: 10px;
-    border-top: 3px solid #0f62fe;
+/* ---------- Proceso: lista ordenada ---------- */
+.lista-proceso {
+    list-style: decimal;
+    padding-left: 24px;
+    margin-top: 12px;
 }
 
-.paso h3 {
-    font-size: 17px;
-    margin-bottom: 6px;
-}
-
-.paso p {
-    font-size: 14px;
+.lista-proceso li {
+    padding: 6px 0;
 }
 
 /* =========================================================
