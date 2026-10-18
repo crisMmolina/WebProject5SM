@@ -64,11 +64,6 @@ ul, ol {
     background-color: #0043ce;
 }
 
-.boton-blanco {
-    background-color: white;
-    color: #0f62fe;
-}
-
 /* =========================================================
    HEADER - posicionamiento fijo
    ========================================================= */
@@ -266,18 +261,16 @@ mark {
     color: #222222;
 }
 
-/* ---------- Proyectos: imagen flotante ---------- */
+/* ---------- Proyectos (en el aside): imagen arriba ---------- */
 .proyecto {
     margin-bottom: 16px;
-    padding: 16px;
-    border: 1px solid #dddddd;
-    overflow: hidden;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dddddd;
 }
 
 .proyecto img {
-    float: left;
-    width: 280px;
-    margin-right: 20px;
+    width: 100%;
+    margin-bottom: 8px;
 }
 
 /* Opacidad al pasar el mouse */
@@ -286,7 +279,7 @@ mark {
 }
 
 .proyecto h3 {
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 8px;
 }
 
@@ -404,42 +397,17 @@ textarea.campo-error {
 /* =========================================================
    ASIDE
    ========================================================= */
-.caja {
-    margin-bottom: 16px;
+aside article {
     padding: 20px;
-    border: 1px solid #dddddd;
-    background-color: white;
 }
 
-.caja h4 {
-    font-size: 17px;
+aside h2 {
+    font-size: 22px;
     margin-bottom: 12px;
 }
 
-.caja p {
+aside p {
     font-size: 14px;
-    color: #555555;
-    margin-bottom: 12px;
-}
-
-.caja-azul {
-    border: none;
-    background-color: #0f62fe;
-}
-
-.caja-azul h4,
-.caja-azul p {
-    color: white;
-}
-
-.enlace-rapido {
-    display: block;
-    padding: 8px 0;
-    font-size: 14px;
-}
-
-.enlace-rapido i {
-    width: 24px;
 }
 
 /* =========================================================
