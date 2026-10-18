@@ -634,6 +634,7 @@ footer .logo {
 
 /* En el fondo oscuro el logo va dentro de un círculo blanco */
 footer .logo img {
+    padding: 3px;
     background-color: white;
     border-radius: 4px;
 }
