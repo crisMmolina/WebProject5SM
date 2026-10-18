@@ -35,7 +35,7 @@
     </header>
 
     <!-- ===================== PORTADA con video de fondo ===================== -->
-    <section id="inicio" class="portada">
+    <section id="inicio">
         <video autoplay muted loop poster="imagenes/video-portada.jpg">
             <source src="video/codigo.mp4" type="video/mp4" />
         </video>
@@ -88,7 +88,7 @@
                 <p class="justificado">
                     He desarrollado aplicaciones web con mapas y análisis de datos, trabajando
                     en equipo con metodologías ágiles. Actualmente me especializo en
-                    <strong>Spring Boot</strong> para desarrollo backend.
+                    <mark>Spring Boot</mark> para desarrollo backend.
                 </p>
                 <ul class="lista-check">
                     <li>Interfaces web con React</li>
@@ -169,26 +169,39 @@
                 <p class="subtitulo">Logros</p>
                 <h2>Hackathons</h2>
 
-                <div class="logro">
-                    <p class="subtitulo">1er lugar · IBM Track</p>
-                    <h3>SEDECO Secretaría Hackathon</h3>
-                    <p>Junio 2026 · Proyecto MercurIA</p>
-                </div>
-                <div class="logro">
-                    <p class="subtitulo">1er lugar · IBM Track</p>
-                    <h3>IBM Talent Land Genius Arena</h3>
-                    <p>Abril 2026 · Proyecto LumivIA</p>
-                </div>
-                <div class="logro">
-                    <p class="subtitulo">3er lugar · Best Bolt Award</p>
-                    <h3>ElevenLabs Hackathon CDMX</h3>
-                    <p>Diciembre 2025 · Proyecto Psyness</p>
-                </div>
-                <div class="logro">
-                    <p class="subtitulo">Ganador · Open Source</p>
-                    <h3>Your Future Made in Austria</h3>
-                    <p>Noviembre 2025 · Proyecto RailSense</p>
-                </div>
+                <!-- Tabla de logros -->
+                <table>
+                    <tr>
+                        <th>Lugar</th>
+                        <th>Hackathon</th>
+                        <th>Fecha</th>
+                        <th>Proyecto</th>
+                    </tr>
+                    <tr>
+                        <td>1er lugar · IBM Track</td>
+                        <td>SEDECO Secretaría Hackathon</td>
+                        <td>Junio 2026</td>
+                        <td>MercurIA</td>
+                    </tr>
+                    <tr>
+                        <td>1er lugar · IBM Track</td>
+                        <td>IBM Talent Land Genius Arena</td>
+                        <td>Abril 2026</td>
+                        <td>LumivIA</td>
+                    </tr>
+                    <tr>
+                        <td>3er lugar · Best Bolt Award</td>
+                        <td>ElevenLabs Hackathon CDMX</td>
+                        <td>Diciembre 2025</td>
+                        <td>Psyness</td>
+                    </tr>
+                    <tr>
+                        <td>Ganador · Open Source</td>
+                        <td>Your Future Made in Austria</td>
+                        <td>Noviembre 2025</td>
+                        <td>RailSense</td>
+                    </tr>
+                </table>
             </article>
 
             <!-- ARTICLE: Proceso de trabajo -->
@@ -220,7 +233,7 @@
             </article>
 
             <!-- ARTICLE: Contacto -->
-            <article id="contacto" class="contacto">
+            <article id="contacto">
                 <div class="contacto-info">
                     <p class="subtitulo">Contacto</p>
                     <h2>Escríbeme</h2>
