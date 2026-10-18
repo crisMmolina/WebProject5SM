@@ -632,7 +632,7 @@ footer .logo {
     color: white;
 }
 
-/* En el fondo oscuro el logo va dentro de un círculo blanco */
+/* En el fondo oscuro el logo va sobre un cuadro blanco */
 footer .logo img {
     padding: 3px;
     background-color: white;
