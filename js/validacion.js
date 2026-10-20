@@ -1,5 +1,3 @@
-// validacion.js - Revisa el formulario de contacto antes de enviarlo
-
 var formulario = document.getElementById("formulario");
 
 // Muestra (o borra) el mensaje de error debajo de un campo
@@ -19,7 +17,6 @@ formulario.addEventListener("submit", function (evento) {
     var mensaje = document.getElementById("mensaje").value.trim();
     var valido = true;
 
-    // Nombre: al menos 3 letras
     if (nombre.length < 3) {
         mostrarError("nombre", "Escribe tu nombre (mínimo 3 letras).");
         valido = false;
@@ -27,7 +24,6 @@ formulario.addEventListener("submit", function (evento) {
         mostrarError("nombre", "");
     }
 
-    // Correo: texto@texto.texto
     var patronCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!patronCorreo.test(correo)) {
         mostrarError("correo", "Escribe un correo válido, por ejemplo: nombre@correo.com");
@@ -35,16 +31,12 @@ formulario.addEventListener("submit", function (evento) {
     } else {
         mostrarError("correo", "");
     }
-
-    // Mensaje: al menos 20 caracteres
     if (mensaje.length < 20) {
         mostrarError("mensaje", "El mensaje debe tener al menos 20 caracteres (llevas " + mensaje.length + ").");
         valido = false;
     } else {
         mostrarError("mensaje", "");
     }
-
-    // Si algo está mal, no se envía el formulario
     if (!valido) {
         evento.preventDefault();
     }
