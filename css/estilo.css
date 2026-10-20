@@ -1,14 +1,7 @@
-/* =========================================================
-   estilo.css - Quetzal Code
-   Hoja de estilos externa
-   ========================================================= */
-
-/* Al usar el menú, deja espacio para el header fijo */
 html {
     scroll-padding-top: 80px;
 }
 
-/* Selector universal */
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +26,6 @@ a {
     text-decoration: none;
 }
 
-/* Apariencia dinámica: hover */
 a:hover {
     text-decoration: underline;
 }
@@ -42,13 +34,11 @@ ul, ol {
     list-style: none;
 }
 
-/* Contenedor centrado (header y footer) */
 .interior {
     width: 1140px;
     margin: 0 auto;
 }
 
-/* Botones */
 .boton {
     display: inline-block;
     padding: 10px 20px;
@@ -64,9 +54,6 @@ ul, ol {
     background-color: #0043ce;
 }
 
-/* =========================================================
-   HEADER - posicionamiento fijo
-   ========================================================= */
 header {
     position: fixed;
     top: 0;
@@ -93,7 +80,6 @@ header {
     vertical-align: middle;
 }
 
-/* NAV: enlaces uno al lado del otro */
 nav {
     float: right;
     margin-top: 12px;
@@ -114,9 +100,6 @@ nav a.boton {
     color: white;
 }
 
-/* =========================================================
-   PORTADA (#inicio) con video de fondo
-   ========================================================= */
 #inicio {
     position: relative;
     height: 440px;
@@ -124,7 +107,6 @@ nav a.boton {
     background-color: #001141;
 }
 
-/* Video y capa con posicionamiento absoluto */
 #inicio video {
     position: absolute;
     top: 0;
@@ -140,7 +122,7 @@ nav a.boton {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 17, 65, 0.85); /* RGBA: azul transparente */
+    background-color: rgba(0, 17, 65, 0.85);
 }
 
 .portada-contenido {
@@ -168,9 +150,6 @@ nav a.boton {
     margin-bottom: 10px;
 }
 
-/* =========================================================
-   CONTENEDOR: section (izquierda) + aside (derecha)
-   ========================================================= */
 .contenedor {
     width: 1140px;
     margin: 24px auto 50px;
@@ -187,7 +166,6 @@ aside {
     width: 300px;
 }
 
-/* ARTICLE: cada sección es un bloque blanco */
 article {
     margin-bottom: 20px;
     padding: 30px;
@@ -205,7 +183,6 @@ article p {
     color: #555555;
 }
 
-/* Subtítulo: solo cambia el color de la letra */
 .subtitulo {
     font-weight: 600;
     color: #0f62fe;
@@ -217,12 +194,10 @@ article p {
     margin-bottom: 14px;
 }
 
-/* mark: resalta una palabra */
 mark {
     background-color: #d0e2ff;
 }
 
-/* ---------- Sobre mí: imagen flotante ---------- */
 .sobre-mi-imagen {
     float: left;
     margin: 0 24px 10px 0;
@@ -242,7 +217,6 @@ mark {
     color: #222222;
 }
 
-/* ---------- Servicios: imagen flotante y lista ---------- */
 .imagen-derecha {
     float: right;
     width: 280px;
@@ -261,7 +235,6 @@ mark {
     color: #222222;
 }
 
-/* ---------- Proyectos (en el aside): imagen arriba ---------- */
 .proyecto {
     margin-bottom: 16px;
     padding-bottom: 12px;
@@ -273,7 +246,6 @@ mark {
     margin-bottom: 8px;
 }
 
-/* Opacidad al pasar el mouse */
 .proyecto img:hover {
     opacity: 0.8;
 }
@@ -298,7 +270,6 @@ mark {
     font-size: 14px;
 }
 
-/* ---------- Logros: tabla ---------- */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -317,7 +288,6 @@ td {
     border-bottom: 1px solid #dddddd;
 }
 
-/* ---------- Proceso: lista ordenada ---------- */
 .lista-proceso {
     list-style: decimal;
     padding-left: 24px;
@@ -328,9 +298,6 @@ td {
     padding: 6px 0;
 }
 
-/* =========================================================
-   CONTACTO y formulario
-   ========================================================= */
 .contacto-info {
     float: left;
     width: 360px;
@@ -373,7 +340,6 @@ input, select, textarea {
     font-size: 14px;
 }
 
-/* focus: campo seleccionado */
 input:focus, select:focus, textarea:focus {
     border-color: #0f62fe;
 }
@@ -382,7 +348,6 @@ form .boton {
     width: 100%;
 }
 
-/* Validación: campos con error en rojo */
 input.campo-error,
 textarea.campo-error {
     border-color: red;
@@ -394,9 +359,6 @@ textarea.campo-error {
     color: red;
 }
 
-/* =========================================================
-   ASIDE
-   ========================================================= */
 aside article {
     padding: 20px;
 }
@@ -410,9 +372,6 @@ aside p {
     font-size: 14px;
 }
 
-/* =========================================================
-   FOOTER negro
-   ========================================================= */
 footer {
     clear: both;
     padding: 40px 0;
@@ -451,7 +410,6 @@ footer a {
     color: #cccccc;
 }
 
-/* Botón regresar arriba: posicionamiento fijo */
 .boton-arriba {
     position: fixed;
     right: 30px;
